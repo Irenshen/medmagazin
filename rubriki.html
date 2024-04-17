@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Медицинский журнал </title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+    <meta name="description" content="">
+
+    <link rel="canonical" href="" />
+    <link rel="shortcut icon" href="assets/images/logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/font.css" rel="preload">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap w-100 rel d-flex al-center jc-sb">
+                <a class="logo d-flex al-center" href="/">
+                    <div class="pic-wrap">
+                        <img src="assets/images/logo/logo.svg" title="" alt="" class="logo-img" />
+                    </div>
+                    <span class="logo__text">медицинский журнал</span>
+                </a>
+                <div class="menu hidden-xs">
+                    <div class="menu__inner d-flex jc-sb">
+                        <ul class="menu-list d-flex al-center">
+                            <li class="menu-item"><a href="" class="menu-item__link">Свежий выпуск</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Архив</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Рубрики</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Авторам</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">О журнале</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-wrap hidden-xs">
+                    <div class="btn">
+                        Отправить статью
+                    </div>
+                </div>
+                <div class="header-icons socials d-flex jc-sb al-center hidden-xs">
+                    <a href="" class="circle-link searching-icon"></a>
+                    <div class="dropdown-lang">
+                        <a class="circle-link lang-icon d-flex al-center">EN</a>
+                        <!-- <div class="dropdown-lang-content">
+                            <div class="wrap-dropdown-lang">
+                                <div class="inner-dropdown-lang">
+                                    <div class="circle-link-wrap d-flex jc-center">
+                                        <a href="/en/" class="circle-link lang-icon">EN</a>
+                                    </div>
+                                    <div class="circle-link-wrap d-flex jc-center">
+                                        <a href="/bel/" class="circle-link lang-icon">BY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="header__burger burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu_mobile w-100">
+                <div class="d-flex jc-sb">
+                    <div class="menu-search-wrap visible-xs">
+                        <form action="/search/index.php" class="rel w-100 d-flex al-center">
+                            <script>
+                                BX.ready(function () {
+                                    var input = BX("qplSKIW");
+                                    if (input)
+                                        new JsSuggest(input, 'pe:10,md5:,site:s1');
+                                });
+                            </script>
+                            <iframe style="width:0px; height:0px; border: 0px;" src="javascript:''"
+                                name="qplSKIW_div_frame" id="qplSKIW_div_frame"></iframe><input size="15" name="q"
+                                id="qplSKIW" placeholder="Поиск..." value="" class="search-suggest search-input w-100"
+                                type="text" autocomplete="off">&nbsp;<input name="s" type="submit" value=""
+                                class="search-btn">
+                        </form>
+                    </div>
+                    <div id="menu-closer" class="closer"></div>
+                </div>
+                <div class="menu_mobile-top visible-xs">
+                    <div class="btn-wrap">
+                        <div class="btn">
+                            Отправить статью
+                        </div>
+                    </div>
+                    <div class="header-icons socials d-flex jc-sb al-center">
+                        <a class="circle-link lang-icon d-flex al-center">EN</a>
+                    </div>
+                </div>
+                <div class="menu visible-xs">
+                    <div class="menu__inner d-flex jc-sb">
+                        <ul class="menu-list d-flex al-center">
+                            <li class="menu-item"><a href="" class="menu-item__link">Свежий выпуск</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Архив</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Рубрики</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Авторам</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">О журнале</a></li>
+                            <li class="menu-item"><a href="" class="menu-item__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_mobile-bottom visible-xs">
+                    <div class="contact-item">
+                        <div class="contact-item__title">
+                            Адрес для писем
+                        </div>
+                        <div class="contact-item__info">
+                            220006, г. Минск, ул. Ленинградская 6, кабинет 2<br>
+                            Телефон: +375 17 363-88-92<br>
+                            Эл.почта: <a href="mailto:medjournal@bsmu.by">
+                                medjournal@bsmu.by
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="light-top-cover-container">
+        <div class="breadcrumbs-wrap">
+            <div class="container">
+                <ul class="breadcrumbs d-flex al-center w-100">
+                    <li><a href="/" title="Главная">Главная</a></li>
+                    <li>Рубрики</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="title">Рубрики</h1>
+        </div>
+    </div>
+
+    <div class="page-content page-rubric">
+        <div class="container">
+            <div class="article-info__top top-wrap d-flex al-center">
+                <div class="custom-tabs-wrap article-info__tabs-wrap d-flex al-center">
+                    <div class="custom-tab article-info__tab active">
+                        В помощь практикующему врачу </div>
+                    <div class="custom-tab article-info__tab">
+                        Клинический обзор</div>
+                    <div class="custom-tab article-info__tab">
+                        Лекции</div>
+                    <div class="custom-tab article-info__tab">
+                        Некролог</div>
+                    <div class="custom-tab article-info__tab">
+                        Обмен опытом</div>
+                    <div class="custom-tab article-info__tab">
+                        Случай из практики</div>
+                    <div class="custom-tab article-info__tab">
+                        Юбилей</div>
+                    <div class="custom-tab article-info__tab">
+                        Исторический ракурс</div>
+                    <div class="custom-tab article-info__tab">
+                        Краткие сообщения</div>
+                    <div class="custom-tab article-info__tab">
+                        Летопись БГМУ</div>
+                    <div class="custom-tab article-info__tab">
+                        Новые технологии</div>
+                    <div class="custom-tab article-info__tab">
+                        Оригинальные научные публикации</div>
+                    <div class="custom-tab article-info__tab">
+                        Хроника</div>
+                </div>
+            </div>
+            <div class="custom-tabs-content-wrap article-info__tabs-content-wrap col-100-xs">
+                <div class="custom-tabs-content article-info__tabs-content opened">
+                    <div class="section-articles__wrap">
+                        <div class="article-item">
+                            <a href="" class="article-item__branch">
+                                В помощь практикующему врачу
+                            </a>
+                            <a href="" class="article-item__title">
+                                Частота выполнения медицинских процедур у пациентов с ожогами, травмированных
+                                в состоянии опьянения
+                            </a>
+                            <div class="article-item__author">
+                                О. Н. Петровская, М. И. Римжа, Л. В. Золотухина
+                            </div>
+                            <div class="article-item__doi">
+                                DOI: <a href="https://dx.doi.org/10.10101010/2222-0011.2023.4.10"
+                                    target="_blank">https://dx.doi.org/10.10101010/2222-0011.2023.4.10 </a>
+                            </div>
+                            <div class="article-item__accordion accordion">
+                                Аннотация
+                            </div>
+                            <div class="article-item__panel panel text">
+                                По результатам анализа 322 медицинских карт взрослых пациентов (старше 18 лет) с
+                                ожогами,
+                                поступивших для стационарного лечения в состоянии опьянения (алкогольного и/или
+                                наркотического), и 1377 – в трезвом виде, установлено, что в совокупности
+                                диагностических и
+                                лечебных процедур у пациентов анализируемых групп преобладают рентгенологические
+                                обследования (21,5–23,8 %) и первичная хирургическая обработка ран (20,2–37,5 %). У
+                                травмированных в состоянии опьянения чаще выполнялись катетеризация центральных вен (в
+                                3,9
+                                раза) и мочевого пузыря (в 3,6), интубация трахеи (в 3,9), бронхоскопия (в 4,7),
+                                фиброгастродуоденоскопия
+                                (в 7,2), трахеотомия (в 9,3), некрэктомия и дермопластика (в 1,7 раза), причем кратность
+                                данных вмешательств была большей из-за более обширных и глубоких поражений, чем среди
+                                травмированных в трезвом виде. Первичная хирургическая обработка меньшему количеству
+                                госпитализированных в состоянии опьянения носит объективный характер из-за более частого
+                                наступления у данного контингента пострадавших неблагоприятного исхода в первые сутки
+                                госпитализации. Между частотой выполнения некрэктомии и дермопластики отмечена прямая
+                                корреляционная зависимость (rxy = 0,99), свидетельствующая о высокой сопряженности
+                                указанных
+                                врачебных вмешательств.
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <a href="" class="article-item__branch">
+                                В помощь практикующему врачу
+                            </a>
+                            <a href="" class="article-item__title">
+                                Эндометриальные факторы как причина бесплодия и имплантационных неудач при синдроме
+                                поликистозных яичников
+                            </a>
+                            <div class="article-item__author">
+                                О. Н. Петровская, М. И. Римжа, Л. В. Золотухина
+                            </div>
+                            <div class="article-item__doi">
+                                DOI: <a href="https://dx.doi.org/10.10101010/2222-0011.2023.4.10"
+                                    target="_blank">https://dx.doi.org/10.10101010/2222-0011.2023.4.10 </a>
+                            </div>
+                            <div class="article-item__accordion accordion">
+                                Аннотация
+                            </div>
+                            <div class="article-item__panel panel text">
+                                По результатам анализа 322 медицинских карт взрослых пациентов (старше 18 лет) с
+                                ожогами,
+                                поступивших для стационарного лечения в состоянии опьянения (алкогольного и/или
+                                наркотического), и 1377 – в трезвом виде, установлено, что в совокупности
+                                диагностических и
+                                лечебных процедур у пациентов анализируемых групп преобладают рентгенологические
+                                обследования (21,5–23,8 %) и первичная хирургическая обработка ран (20,2–37,5 %). У
+                                травмированных в состоянии опьянения чаще выполнялись катетеризация центральных вен (в
+                                3,9
+                                раза) и мочевого пузыря (в 3,6), интубация трахеи (в 3,9), бронхоскопия (в 4,7),
+                                фиброгастродуоденоскопия
+                                (в 7,2), трахеотомия (в 9,3), некрэктомия и дермопластика (в 1,7 раза), причем кратность
+                                данных вмешательств была большей из-за более обширных и глубоких поражений, чем среди
+                                травмированных в трезвом виде. Первичная хирургическая обработка меньшему количеству
+                                госпитализированных в состоянии опьянения носит объективный характер из-за более частого
+                                наступления у данного контингента пострадавших неблагоприятного исхода в первые сутки
+                                госпитализации. Между частотой выполнения некрэктомии и дермопластики отмечена прямая
+                                корреляционная зависимость (rxy = 0,99), свидетельствующая о высокой сопряженности
+                                указанных
+                                врачебных вмешательств.
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <a href="" class="article-item__branch">
+                                В помощь практикующему врачу
+                            </a>
+                            <a href="" class="article-item__title">
+                                Нецелиакийная чувствительность к глютену – диагноз исключения
+                            </a>
+                            <div class="article-item__author">
+                                О. Н. Петровская, М. И. Римжа, Л. В. Золотухина
+                            </div>
+                            <div class="article-item__doi">
+                                DOI: <a href="https://dx.doi.org/10.10101010/2222-0011.2023.4.10"
+                                    target="_blank">https://dx.doi.org/10.10101010/2222-0011.2023.4.10 </a>
+                            </div>
+                            <div class="article-item__accordion accordion">
+                                Аннотация
+                            </div>
+                            <div class="article-item__panel panel text">
+                                По результатам анализа 322 медицинских карт взрослых пациентов (старше 18 лет) с
+                                ожогами,
+                                поступивших для стационарного лечения в состоянии опьянения (алкогольного и/или
+                                наркотического), и 1377 – в трезвом виде, установлено, что в совокупности
+                                диагностических и
+                                лечебных процедур у пациентов анализируемых групп преобладают рентгенологические
+                                обследования (21,5–23,8 %) и первичная хирургическая обработка ран (20,2–37,5 %). У
+                                травмированных в состоянии опьянения чаще выполнялись катетеризация центральных вен (в
+                                3,9
+                                раза) и мочевого пузыря (в 3,6), интубация трахеи (в 3,9), бронхоскопия (в 4,7),
+                                фиброгастродуоденоскопия
+                                (в 7,2), трахеотомия (в 9,3), некрэктомия и дермопластика (в 1,7 раза), причем кратность
+                                данных вмешательств была большей из-за более обширных и глубоких поражений, чем среди
+                                травмированных в трезвом виде. Первичная хирургическая обработка меньшему количеству
+                                госпитализированных в состоянии опьянения носит объективный характер из-за более частого
+                                наступления у данного контингента пострадавших неблагоприятного исхода в первые сутки
+                                госпитализации. Между частотой выполнения некрэктомии и дермопластики отмечена прямая
+                                корреляционная зависимость (rxy = 0,99), свидетельствующая о высокой сопряженности
+                                указанных
+                                врачебных вмешательств.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+                <div class="custom-tabs-content article-info__tabs-content">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top d-flex jc-sb  al-center w-100">
+                <a class="logo d-flex al-center" href="/">
+                    <div class="pic-wrap">
+                        <img src="assets/images/logo/logo.svg" title="" alt="" class="logo-img">
+                    </div>
+                    <span class="logo__text">медицинский журнал</span>
+                </a>
+                <div class="footer-menu d-flex">
+                    <ul class="menu-list d-flex al-center">
+                        <li class="menu-item"><a href="" class="menu-item__link">Свежий выпуск</a></li>
+                        <li class="menu-item"><a href="" class="menu-item__link">Архив</a></li>
+                        <li class="menu-item"><a href="" class="menu-item__link">Рубрики</a></li>
+                        <li class="menu-item hidden-xs"><a href="" class="menu-item__link">Авторам</a></li>
+                        <li class="menu-item"><a href="" class="menu-item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="to-top-wrap">
+                    <a href="#"> <span class="hidden-xs">Наверх</span><span class="to-top"></span></a>
+                </div>
+            </div>
+            <div class="footer-bottom w-100 d-flex">
+                <div class="f-bottom-text-col">
+                    <div class="f-bottom-text copyright">
+                        © 1921—2022 Учреждение образования «Белорусский государственный медицинский университет».
+                    </div>
+                </div>
+                <div class="f-bottom-text-col">
+                    <div class="f-bottom-text">При перепечатке текстовой информации и фотографий гиперссылка на сайт
+                        обязательна. Все права на материалы принадлежат их авторам.
+                    </div>
+                </div>
+                <div class="f-bottom-text-col">
+                    <span class="f-bottom-text">Дизайн и разработка</span>
+                    <a href="https://itach.by/" class="created-by f-bottom-text" target="_blank"
+                        rel="nofollow">Итач-софт</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="libs/jquery.maskedinput.min.js"></script>
+
+</body>
+
+</html>
